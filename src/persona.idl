@@ -1,0 +1,12 @@
+module personaApp{
+    interface persona{
+        boolean insertarPersona (in long identifigacion, in wstring nombre, 
+        in wstring apellidos, in long telefono, in wstring direccion);
+        astring consultarPersona (in long identificacion);
+        boleam eliminarPersona(in long identifigacion);
+        bolean actualizarPersona(in long identifigacion, in wstring nombre,
+        in wstring apellidos, in long telefono, in wstring direccion);
+        wstring listarPersonas();
+        oneway void shutdown();
+    };
+};
